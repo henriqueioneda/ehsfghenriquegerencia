@@ -1,0 +1,15 @@
+.row
+    .col-xs-6.col-xs-offset-3
+        .jumbotron
+            p#notice = notice
+
+            p Valor: 
+                #{@payment.value}
+            p Pagador: 
+                #{@payment.payer}
+            p Recebedor: 
+                #{@payment.payee}
+            p Vencimento: 
+                #{@payment.due}
+
+            = link_to 'Back', payments_path

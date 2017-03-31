@@ -1,0 +1,22 @@
+.row
+  .col-xs-8.col-xs-offset-2
+    h1 Pagamentos
+
+    table.table.table-striped
+      thead
+        tr
+          th ID
+          th Valor
+          th Pagador
+          th Recebedor
+          th
+
+      tbody
+        - @payments.each do |payment|
+          tr
+            td = payment.id
+            td = payment.value
+            td = payment.payer
+            td = payment.payee
+            td = link_to 'Visualizar', payment_path(payment.id)
+    br

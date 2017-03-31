@@ -1,0 +1,16 @@
+.row
+    .col-xs-6.col-xs-offset-3
+        .jumbotron
+            p#notice = notice
+
+            p Nome: 
+                #{@user.name}
+            p Email: 
+                #{@user.email}
+            p Tipo de conta: 
+                #{@user.acc_type}
+            p Telefone de contato: 
+                #{@user.phone}
+                
+
+            = link_to 'Back', users_path
