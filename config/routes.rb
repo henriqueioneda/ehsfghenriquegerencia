@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :users  
   get '/login', to: 'visitors#login'
   get '/logout', to: 'visitors#logout'
+  get '/billing', to: 'visitors#billing'
 end

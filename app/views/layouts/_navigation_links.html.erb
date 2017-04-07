@@ -1,6 +1,9 @@
 <%# add navigation links to this file %>
 <% if @signed_in %>
     <li>
+        <%= link_to 'Tarifação', billing_path %>
+    </li>
+    <li>
         <%= link_to 'Pagamentos', payments_path %>
     </li>
     <li>

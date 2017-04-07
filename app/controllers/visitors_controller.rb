@@ -7,4 +7,7 @@ class VisitorsController < ApplicationController
         cookies.delete(:login)
         redirect_to :root
     end        
+
+    def billing
+    end
 end
