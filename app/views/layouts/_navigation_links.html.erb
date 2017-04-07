@@ -1,7 +1,16 @@
 <%# add navigation links to this file %>
-<li>
-    <%= link_to 'Pagamentos', payments_path %>
-</li>
-<li>
-    <%= link_to 'Afiliações', users_path %>
-</li>
+<% if @signed_in %>
+    <li>
+        <%= link_to 'Pagamentos', payments_path %>
+    </li>
+    <li>
+        <%= link_to 'Afiliações', users_path %>
+    </li>
+    <li>
+        <%= link_to "Sair", logout_path %>
+    </li>
+<% else %>
+    <li>
+        <%= link_to "Login", login_path %>
+    </li>
+<% end %>
